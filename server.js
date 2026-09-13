@@ -31,7 +31,7 @@ app.post('/api/generate', async (req, res) => {
     }
 
     const message = await client.messages.create({
-      model: 'claude-opus-4-1',
+      model: 'claude-3-5-sonnet-20241022',
       max_tokens: 1024,
       messages: [
         { role: 'user', content: prompts[type] }
